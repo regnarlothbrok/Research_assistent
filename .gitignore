@@ -1,0 +1,43 @@
+# Python cache files
+__pycache__/
+*.pyc
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+
+# Data directories
+data/
+qdrant_storage/
+
+# Virtual environment
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ollama related
+ollama/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
