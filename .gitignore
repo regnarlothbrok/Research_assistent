@@ -27,8 +27,6 @@ node_modules/
 package-lock.json
 yarn.lock
 
-# Ollama related
-ollama/
 
 # System files
 .DS_Store
