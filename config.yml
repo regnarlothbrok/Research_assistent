@@ -5,3 +5,12 @@ embedding_model: "sentence-transformers/all-mpnet-base-v2"
 qdrant_url: "http://localhost:6333"
 collection_name: "researchpapers"
 chunk_size: 1024
+download_papers: false  # Set to true only if you need the PDFs
+rate_limit:
+  delay_seconds: 3
+  max_concurrent: 3
+ollama:
+  host: "localhost"
+  port: 11434
+model:
+  name: "research_assistant"
