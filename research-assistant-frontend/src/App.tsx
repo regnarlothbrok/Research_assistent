@@ -15,6 +15,7 @@ import PapersList from './components/PapersList';
 import ChatInterface from './components/ChatInterface';
 import { searchPapers, chatWithAssistant } from './services/api';
 import { Paper, Message } from './types';
+import Navbar from './components/Navbar';
 
 const theme = createTheme({
   palette: {
@@ -80,11 +81,10 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <Navbar />
       <CssBaseline />
-      <Container maxWidth="xl" sx={{ py: 4 }}>
-        <Typography variant="h3" component="h1" gutterBottom align="center">
-          Research Assistant
-        </Typography>
+
+      <Container maxWidth="xl" sx={{ py: 4, mt: '80px' }}> {/* Added margin-top here */}
         <SearchBar onSearch={handleSearch} isLoading={isSearching} />
         <Grid container spacing={4} sx={{ mt: 2 }}>
           <Grid item xs={12} md={6}>

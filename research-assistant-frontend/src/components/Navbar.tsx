@@ -22,7 +22,7 @@ const StyledNavbar = styled(AppBar)({
   zIndex: 1100,
 });
 
-const HeaderTitle = styled('h1')({  // Changed from Typography to h1
+const HeaderTitle = styled('h1')({  
   fontSize: '2rem',
   fontWeight: 400,
   color: '#000',
@@ -36,7 +36,7 @@ const HeaderTitle = styled('h1')({  // Changed from Typography to h1
 
 const Navbar = () => {
   return (
-    <StyledNavbar>
+    <StyledNavbar >
       <HeaderTitle>
         Research Assistant
       </HeaderTitle>

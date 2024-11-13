@@ -20,6 +20,9 @@ ollama run research_assistant
 # 4. Start Frontend
 npm start
 
+# 5. To download
+python rag/data.py --topic "Long-Context Large Language Models (LLMs)." --years 5 --max 10 
+
 
 
 Dependencies: 
